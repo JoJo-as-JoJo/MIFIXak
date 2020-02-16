@@ -249,4 +249,197 @@ for i in range(len(r18.json()['features'])):
         UB = UB + 0.1 * x4
     if k[1] > C[0] and k[0] > C[1]:
         SB = SB + 0.1 * x4
-print(int(UZ), int(SZ), int(UB), int(SB))
+if int(UB)>int(SB) and int(SB)>int(UZ) and int(UZ)>int(SZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\1.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UB)>int(SZ) and int(SZ)>int(UZ) and int(UZ)>int(SB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\2.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UZ)>int(SB) and int(SB)>int(UB) and int(UB)>int(SZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\3.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UB)>int(SB) and int(SB)>int(SZ) and int(SZ)>int(UZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\4.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SB)>int(UB) and int(UB)>int(UZ) and int(UZ)>int(SZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\5.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SB)>int(UZ) and int(UZ)>int(UB) and int(UB)>int(SZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\6.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UB)>int(UZ) and int(UZ)>int(SB) and int(SB)>int(SZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\7.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UZ)>int(UB) and int(UB)>int(SB) and int(SB)>int(SZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\8.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UZ)>int(SZ) and int(SZ)>int(UB) and int(UB)>int(SB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\9.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UZ)>int(SZ) and int(SZ)>int(SB) and int(SB)>int(UB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\10.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UB)>int(SZ) and int(SZ)>int(SB) and int(SB)>int(UZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\11.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SB)>int(UB) and int(UB)>int(SZ) and int(SZ)>int(UZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\12.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SB)>int(UZ) and int(UZ)>int(SZ) and int(SZ)>int(UB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\13.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SB)>int(SZ) and int(SZ)>int(UB) and int(UB)>int(UZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\14.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UZ)>int(UB) and int(UB)>int(SZ) and int(SZ)>int(SB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\15.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UB)>int(UZ) and int(UZ)>int(SZ) and int(SZ)>int(SB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\16.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(UZ)>int(SB) and int(SB)>int(SZ) and int(SZ)>int(UB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\17.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SB)>int(SZ) and int(SZ)>int(UZ) and int(UZ)>int(UB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\18.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SZ)>int(UZ) and int(UZ)>int(SB) and int(SB)>int(UB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\19.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SZ)>int(UB) and int(UB)>int(SB) and int(SB)>int(UZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\20.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SZ)>int(UB) and int(UB)>int(UZ) and int(UZ)>int(SB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\21.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SZ)>int(UZ) and int(UZ)>int(UB) and int(UB)>int(SB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\22.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SZ)>int(SB) and int(SB)>int(UB) and int(UB)>int(UZ):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\23.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+if int(SZ)>int(SB) and int(SB)>int(UZ) and int(UZ)>int(UB):
+    form = sg.FlexForm("Ваш результат")
+    layout = [
+            [sg.Text('Лучший район для вас:', size=(23, 1))],
+            [sg.Image(r'F:\moscow\24.png')],
+            [sg.Submit('OK')]
+    ]
+    button, values = form.Layout(layout).Read()
+
+
